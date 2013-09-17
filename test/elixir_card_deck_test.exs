@@ -2,7 +2,8 @@ defmodule ElixirCardDeckTest do
   use ExUnit.Case
 
   test "generates the first card appropriately" do
-    assert ElixirCardDeck.make_deck[0] == {:card, :a, :spades}
+    [first_card | rest] = ElixirCardDeck.make_deck
+    assert first_card == {:card, :a, :spades}
   end
 
   test "generated the whole deck appropriately" do
