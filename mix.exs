@@ -4,7 +4,7 @@ defmodule ElixirCardDeck.Mixfile do
   def project do
     [ app: :elixir_card_deck,
       version: "0.0.1",
-      elixir: "~> 0.10.3-dev",
+      elixir: "~> 0.13.2-dev",
       deps: deps ]
   end
 
